@@ -1,0 +1,45 @@
+.surge_box {
+  height: 72px;
+  border-left: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  position: relative;
+  .top_left {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 24px;
+      height: 24px;
+      background-color: #596068;
+      border-radius: 2px;
+    }
+    .title {
+      padding-left: 8px;
+      font-family: SourceHanSansHC, SourceHanSansHC;
+      color: var(--text-title-color);
+    }
+  }
+  .bottom_right {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+    .value {
+      padding-right: 8px;
+      font-family: SourceHanSansCN, SourceHanSansCN;
+      font-weight: 800;
+      font-size: 22px;
+      color: var(--text-value-color);
+    }
+  }
+}

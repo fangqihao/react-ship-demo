@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>背景点切图</title>
+    <g id="储能回路" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-300.000000, -9.000000)" fill="#454545">
+            <g id="背景切图" transform="translate(300.000000, 9.000000)">
+                <rect id="矩形" x="0" y="0" width="1" height="1"></rect>
+                <rect id="矩形备份-9" x="0" y="3" width="1" height="1"></rect>
+                <rect id="矩形备份-13" x="0" y="6" width="1" height="1"></rect>
+                <rect id="矩形备份-17" x="0" y="9" width="1" height="1"></rect>
+                <rect id="矩形备份-5" x="3" y="0" width="1" height="1"></rect>
+                <rect id="矩形备份-10" x="3" y="3" width="1" height="1"></rect>
+                <rect id="矩形备份-14" x="3" y="6" width="1" height="1"></rect>
+                <rect id="矩形备份-18" x="3" y="9" width="1" height="1"></rect>
+                <rect id="矩形备份-7" x="6" y="0" width="1" height="1"></rect>
+                <rect id="矩形备份-11" x="6" y="3" width="1" height="1"></rect>
+                <rect id="矩形备份-15" x="6" y="6" width="1" height="1"></rect>
+                <rect id="矩形备份-19" x="6" y="9" width="1" height="1"></rect>
+                <rect id="矩形备份-8" x="9" y="0" width="1" height="1"></rect>
+                <rect id="矩形备份-12" x="9" y="3" width="1" height="1"></rect>
+                <rect id="矩形备份-16" x="9" y="6" width="1" height="1"></rect>
+                <rect id="矩形备份-20" x="9" y="9" width="1" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

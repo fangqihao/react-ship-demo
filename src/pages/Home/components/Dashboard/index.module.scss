@@ -1,0 +1,102 @@
+.wrapper {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  background-color: var(--bg-circle-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .small_wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--small-circle-bg-color);
+    border: 1px solid var(--card-border);
+    position: relative;
+    /* 箭头容器（用于旋转） */
+    .arrow_container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform-origin: center 28px; /* 旋转中心设为圆心 */
+    }
+
+    /* 线条 */
+    .arrow_line {
+      width: 2px;
+      height: 25px; /* 线的长度，与半径相同 */
+      background-color: #FFE757;
+      position: absolute;
+      bottom: 2px;
+    }
+
+    /* 箭头 */
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 8px solid #FFE757;
+      position: absolute;
+      top: -8px; /* 让箭头在线的前方，保持在圆边 */
+    }
+
+    .circle {
+      position: absolute;
+      top: calc(50% - 4px);
+      left: calc(50% - 4px);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      z-index: 2;
+    }
+
+    /* 旋转的三角形 */
+    .triangle {
+      position: absolute;
+      width: 8px; /* 柱子的宽度 */
+      height: 28px; /* 柱子的高度 */
+      background-color: #32EDA3;
+      top: calc(50% - 28px);
+      left: calc(50% - 4px);
+      transform-origin: center bottom; /* 让柱子底部对齐圆边 */
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      z-index: 1;
+    }
+
+
+    /* 箭头容器（用于旋转） */
+    .arrow_dash_container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform-origin: center 28px; /* 旋转中心设为圆心 */
+    }
+
+    /* 线条 */
+    .arrow_dash_line {
+      width: 2px;
+      height: 54px; /* 线的长度，与半径相同 */
+      // background-color: #8A959F;
+      border-left: 1px dashed #8A959F; /* 设置左边框为1px虚线 */
+      position: absolute;
+      bottom: -28px;
+    }
+
+    /* 箭头 */
+    .arrow_dash {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 8px solid #8A959F;
+      position: absolute;
+      top: -28px; /* 让箭头在线的前方，保持在圆边 */
+      left: -5px;
+    }
+  }
+}

@@ -5,6 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #262728;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  transition: background-color 0.5s ease-in-out, 
+              color 0.5s ease-in-out, 
+              border-color 0.5s ease-in-out;
+}
+
+/* 默认主题 */
+:root {
+  --top-bg-color:#E4E7EE;
+  --text-color: #3B4046;
+  --text-title-color: #2E3F54;
+  --text-value-color: #3B4046;
+  --text-view-color: #3B4046;
+  --ship-point-bg: #FFFFFF;
+  --card-bg: #FAFAFA;
+  --card-border: #D2D9E1;
+  --half-circle-bg-color:#E4E7EE;
+  --small-circle-bg-color: #E4E7EE;
+  --bg-circle-bg-color: #FAFAFA;
+  --bg-circle-wrapper-color:#FAFAFA;
+  --view-select-bg-color:#E4E7EE;
+  --view-select-text-color: #556579;
+}
+
+/* 暗黑主题 */
+.dark-theme {
+  --top-bg-color: #292C31;
+  --text-color: #FFFFFF;
+  --text-title-color: rgba(255,255,255,0.65);
+  --text-value-color: #FFFFFF;
+  --text-view-color: rgba(255,255,255,0.85);
+  --ship-point-bg: url('./pages//Home//imgs/bg.svg');
+  --card-bg: #3B4046;
+  --card-border: #67696D;
+  --half-circle-bg-color:#2F3B49;
+  --small-circle-bg-color: #152333;
+  --bg-circle-bg-color: #2F3B49;
+  --bg-circle-wrapper-color:#3C4147;
+  --view-select-bg-color:#55697B;
+  --view-select-text-color: rgba(255,255,255,0.85);
 }
 
 code {

@@ -1,0 +1,282 @@
+.wrapper {
+  width: 766px;
+  height: 528px;
+  background: #5D6270;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 24px 0px 24px 31px;
+  .left_ship {
+    width: 480px;
+    height: 480px;
+    // background: #292C31;
+    background: var(--top-bg-color);
+    display: flex;
+    flex-direction: column;
+    .top_actions {
+      width: 100%;
+      height: 48px;
+      padding: 8px 21px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-weight: 800;
+        font-size: 24px;
+        color: var(--text-color);
+        font-family: SourceHanSansCN, SourceHanSansCN;
+      }
+      .actions {
+        display: flex;
+        align-items: center;
+        :global {
+          .ant-radio-button-wrapper {
+            background-color: var(--card-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--card-border);
+          }
+          .ant-radio-button-wrapper:first-child {
+            border: 1px solid var(--card-border);
+            border-right-width: 0px;
+          }
+          .ant-radio-button-wrapper:last-child {
+            border: 1px solid var(--card-border);
+            border-left-width: 0px;
+          }
+          .ant-radio-button-wrapper:not(:first-child)::before {
+            background-color: var(--card-border);
+          }
+          .ant-radio-button-label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .ant-radio-button-wrapper-checked {
+            background: #1065B2;
+          }
+        }
+        .settingImg {
+          width: 24px;
+          height: 24px;
+          margin-left: 16px;
+        }
+      }
+    }
+    .bottom_ship_model {
+      width: 100%;
+      flex: 1;
+      background: var(--card-bg);
+      display: flex;
+      .ship {
+        width: 280px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #29292c;
+        &::before {
+          content: ' ';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: var(--ship-point-bg);
+        }
+        .mainshipNight {
+          width: 120px;
+          height: 350px;
+          background-image: url('./imgs/mainshipNight.png');
+          background-size: cover; /* 让图片铺满整个盒子 */
+          background-position: center; /* 居中对齐 */
+          background-repeat: no-repeat; /* 防止图片重复 */
+          position: relative;
+          &::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 293px;
+            border-radius: 16px;
+            box-shadow: 4px 8px 10px 0px rgba(35,47,60,0.5);
+            filter: blur(0px);
+          }
+        }
+      }
+      .force {
+        flex: 1;
+        height: 100%;
+        background-color: var(--card-bg);
+        display: flex;
+        flex-direction: column;
+        .yaw_box {
+          height: 120px;
+          border-left: 1px solid var(--card-border);
+          border-bottom: 1px solid var(--card-border);
+          position: relative;
+          .yaw_box_top {
+            position: absolute;
+            top: 8px;
+            padding: 0px 8px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .yaw_box_img {
+              width: 24px;
+              height: 24px;
+            }
+            .yaw_box_title {
+              padding-left: 8px;
+              font-family: SourceHanSansHC, SourceHanSansHC;
+              // color: rgba(255,255,255,0.65);
+              color: var(--text-title-color);
+            }
+          }
+          .yaw_box_center {
+            position: absolute;
+            top: 36px;
+            padding: 0px 8px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .value {
+              font-family: SourceHanSansCN, SourceHanSansCN;
+              font-weight: 800;
+              font-size: 22px;
+              color: var(--text-value-color);
+              padding-right: 8px;
+            }
+            .img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+          .yaw_box_bottom {
+            position: absolute;
+            top: 64px;
+            padding: 0px 8px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .view {
+          width: 100%;
+          flex: 1;
+          border-left: 1px solid var(--card-border);
+          border-bottom: 1px solid var(--card-border);
+          display: flex;
+          flex-direction: column;
+          .top {
+            padding: 10px 8px 6px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .title {
+              font-family: SourceHanSansHC, SourceHanSansHC;
+              color: var(--text-view-color);
+              margin-right: 5px;
+            }
+            .select {
+              flex: 1;
+              height: 100%;
+              background-color:var(--view-select-bg-color);
+              border-radius: 2px;
+              color: var(--view-select-text-color);
+              padding: 2px 9px;
+            }
+          }
+          .bottom {
+            margin: auto;
+            width: 112px;
+            height: 112px;
+            background-color:var(--bg-circle-wrapper-color);
+            border: 1px solid var(--card-border);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .dashLine1 {
+              position: absolute;
+              top: 0px;
+              left: 50%;
+              transform: translateX(-50%); /* 将元素向左移动自身宽度的50% */
+              width: 1px;
+              height: 100%;
+              border-left: 1px dashed #8A959F; /* 设置左边框为1px虚线 */
+              z-index: 2;
+            }
+            .dashLine2 {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%); /* 将元素向左移动自身宽度的50% */
+              width: 100%;
+              height: 1px;
+              border-top: 1px dashed #8A959F; /* 设置左边框为1px虚线 */
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right_ship {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .top {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      .thrusters {
+        font-family: SourceHanSansCN, SourceHanSansCN;
+        font-weight: 800;
+        font-size: 32px;
+        color: #FFFFFF;
+      }
+      .night {
+        font-family: SourceHanSansHC, SourceHanSansHC;
+        font-size: 18px;
+        color: #FFFFFF;
+      }
+    }
+    .bottom {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      gap: 19px;
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        .label {
+          font-family: SourceHanSansHC, SourceHanSansHC;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+.img {
+  width: 24px;
+  height: 24px;
+}

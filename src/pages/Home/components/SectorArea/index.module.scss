@@ -1,0 +1,45 @@
+.gauge {
+  width: 96px;  /* 直径 = 2 × 半径 */
+  height: 48px; /* 高度是半径 */
+  background-color: var(--half-circle-bg-color);
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  border: 1px solid var(--card-border);
+  position: relative;
+  overflow: hidden;
+}
+/* 指针 */
+.pointer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background-color: #8A959F;
+  transform-origin: bottom center;
+}
+
+/* 箭头 */
+.pointer .arrow {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 8px solid #8A959F;
+}
+
+/* 扇形遮罩 */
+.sector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // border-top-left-radius: 48px;
+  // border-top-right-radius: 48px;
+  background-color: #32EDA3;
+  // transition: background 0.3s ease;
+  // clip-path: polygon(50% 100%, 100% 0, 0 0); /* 让它形成扇形 */
+  transition: clip-path 0.3s ease;
+  // transform-origin: bottom center;
+}

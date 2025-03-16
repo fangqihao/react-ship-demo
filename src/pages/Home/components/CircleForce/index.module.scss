@@ -1,0 +1,70 @@
+.circle_wrapper1 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  .bow_thruster {
+    width: 32px;
+    height: 32px;
+    background-image: url('../../imgs/thrusterpoint.png');
+    background-size: cover; /* 让图片铺满整个盒子 */
+    background-position: center; /* 居中对齐 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 16px;
+  }
+  .arrow_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    .arrow_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 5px);
+      transform-origin: top;
+
+      /* 单个方块 */
+      .block {
+        width: 6px; /* 方块宽度 */
+        height: 4px; /* 方块高度 */
+        background-color: #EAB12D;
+        border: 1px solid black; /* 每个方块的黑色边框 */
+        border-top: none;
+      }
+      /* 箭头头部 */
+      .arrowhead {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #EAB12D; /* 箭头颜色 */
+        border-radius: 1px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -6px;
+          left: -7px;
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top: 7px solid black; /* 黑色边框 */
+          border-radius: 1px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
