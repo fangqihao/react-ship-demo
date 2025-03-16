@@ -1,0 +1,3 @@
+[build]
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "build"  # 如果是 React/Vue 使用 build，Next.js 使用 .next
